@@ -1,0 +1,197 @@
+---
+/content/documents/corporate-website/cyber-alerts:
+  /wannacry:
+    /wannacry[1]:
+      /website:indicatorscompromise:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:remediationintro:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:summary:
+        hippostd:content: <p>Some summ</p>
+        jcr:primaryType: hippostd:html
+      /website:threataffects[1]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platformaffect threat</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.1
+      /website:threataffects[2]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platform take 2</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.2
+      common:searchRank: 3
+      common:searchable: true
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-02-19T22:00:36.335Z
+      hippostdpubwf:lastModificationDate: 2019-02-19T22:11:59.539Z
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 5a65a8b1-951e-42cd-aa47-393cc151f00c
+      hippotranslation:locale: en
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      - mix:referenceable
+      jcr:primaryType: website:cyberalert
+      publicationsystem:NominalDate: 2019-02-19T00:00:00Z
+      website:category:
+      - Botnet
+      website:ncsclink: ''
+      website:publicallyaccessible: true
+      website:seosummary: SEO is good.  Some nice summary to help with Google rankings.
+      website:severity: High
+      website:shortsummary: Browse SHMI
+      website:sourceofthreatupdates: []
+      website:threatid: ID12345
+      website:threattype: Insecure software
+      website:threatvector:
+      - ''
+      website:title: Wanna Cry
+    /wannacry[2]:
+      /website:indicatorscompromise:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:remediationintro:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:summary:
+        hippostd:content: <p>Some summ</p>
+        jcr:primaryType: hippostd:html
+      /website:threataffects[1]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platformaffect threat</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.1
+      /website:threataffects[2]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platform take 2</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.2
+      common:searchRank: 3
+      common:searchable: true
+      hippo:availability:
+      - preview
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-02-19T22:00:36.335Z
+      hippostdpubwf:lastModificationDate: 2019-02-19T22:01:53.172Z
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 5a65a8b1-951e-42cd-aa47-393cc151f00c
+      hippotranslation:locale: en
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      - mix:referenceable
+      - mix:versionable
+      jcr:primaryType: website:cyberalert
+      publicationsystem:NominalDate: 2019-02-19T00:00:00Z
+      website:category:
+      - Botnet
+      website:ncsclink: ''
+      website:publicallyaccessible: true
+      website:seosummary: SEO is good.  Some nice summary to help with Google rankings.
+      website:severity: High
+      website:shortsummary: Browse SHMI
+      website:sourceofthreatupdates: []
+      website:threatid: ID12345
+      website:threattype: Insecure software
+      website:threatvector:
+      - ''
+      website:title: Wanna Cry
+    /wannacry[3]:
+      /website:indicatorscompromise:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:remediationintro:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /website:summary:
+        hippostd:content: <p>Some summ</p>
+        jcr:primaryType: hippostd:html
+      /website:threataffects[1]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platformaffect threat</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.1
+      /website:threataffects[2]:
+        /website:platformaffected:
+          hippo:docbase: 34186f3d-32ac-4322-ba82-3b698221be56
+          jcr:primaryType: hippo:mirror
+        /website:platformtext:
+          hippostd:content: <p>platform take 2</p>
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: website:threataffect
+        website:versionsaffected:
+        - v1.0.2
+      common:searchRank: 3
+      common:searchable: true
+      hippo:availability:
+      - live
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-02-19T22:00:36.335Z
+      hippostdpubwf:lastModificationDate: 2019-02-19T22:01:53.172Z
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2019-02-19T22:01:56.816Z
+      hippotranslation:id: 5a65a8b1-951e-42cd-aa47-393cc151f00c
+      hippotranslation:locale: en
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      - mix:referenceable
+      jcr:primaryType: website:cyberalert
+      publicationsystem:NominalDate: 2019-02-19T00:00:00Z
+      website:category:
+      - Botnet
+      website:ncsclink: ''
+      website:publicallyaccessible: true
+      website:seosummary: SEO is good.  Some nice summary to help with Google rankings.
+      website:severity: High
+      website:shortsummary: Browse SHMI
+      website:sourceofthreatupdates: []
+      website:threatid: ID12345
+      website:threattype: Insecure software
+      website:threatvector:
+      - ''
+      website:title: Wanna Cry
+    hippo:versionHistory: ddc0c920-24e2-4e62-9cde-b9e423289d49
+    jcr:mixinTypes:
+    - hippo:versionInfo
+    - mix:referenceable
+    jcr:primaryType: hippo:handle
+  hippo:name: Cyber alerts
+  hippostd:foldertype:
+  - new-cyber-alerts-folder
+  - new-cyber-alerts-document
+  hippotranslation:id: b882e700-3c83-411d-8ecf-c987151ce955
+  hippotranslation:locale: en
+  jcr:mixinTypes:
+  - hippo:named
+  - hippotranslation:translated
+  - mix:versionable
+  jcr:primaryType: hippostd:folder

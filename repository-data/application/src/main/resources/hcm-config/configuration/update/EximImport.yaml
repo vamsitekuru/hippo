@@ -2,12 +2,13 @@
 definitions:
   config:
     /hippo:configuration/hippo:update/hippo:registry/EximImport:
-      hipposys:batchsize: 10
+      hipposys:batchsize: 1
       hipposys:description: Exim import script modified by Valtech
       hipposys:dryrun: false
       hipposys:parameters: "{\r\n  \"fileInJson\": true,\r\n  \"sourceBaseFolderPath\"\
-        : \"file:${java.io.tmpdir}/exim-import/\"\r\n}"
-      hipposys:path: /
+        : \"file:/private/var/folders/0f/ss430ycx23149cy0wkk162jw0000gn/T/migrator/exim-import\"\
+        \r\n}"
+      hipposys:query: /jcr:root/content/documents/corporate-website/cyber-alerts[(@jcr:primaryType='hippostd:folder')]
       hipposys:script:
         resource: /configuration/update/EximImport.groovy
         type: string

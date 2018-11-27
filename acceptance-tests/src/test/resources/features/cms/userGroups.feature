@@ -91,3 +91,31 @@ Feature: As a user I want the CMS content to be restricted so I'm not able to do
         Then I can copy the publication
         When I am logged in as ci-author on the content page
         Then I can copy the publication
+
+    Scenario: Cyber alert authors and editors can only see the Cyber alert folder
+            When I am logged in as ca-editor on the content page
+            Then The "Administration" folder should have the menu options including:
+                | No actions available |
+            And I should not see the "Corporate Website/About" folder
+            And I should see the "Corporate Website/Cyber alert" folder
+            When I am logged in as ca-author on the content page
+            Then The "Administration" folder should have the menu options including:
+                | No actions available |
+            And I should not see the "Corporate Website/About" folder
+            And I should see the "Corporate Website/Cyber alert" folder
+
+    Scenario: Cyber alert users can see Cyber alert folder menus according to their role
+        When I am logged in as ca-editor on the content page
+        Then The "Corporate Website/Cyber alert" folder should have the menu options including:
+            | Add new cyber alert document...      |
+            | Add new folder...        |
+            | Publish all in folder... |
+        And The "Corporate Website/Cyber alert" folder should have the menu options not including:
+            | Edit allowed content...  |
+        When I am logged in as ca-author on the content page
+        Then The "Corporate Website/Cyber alert" folder should have the menu options including:
+            | Add new cyber alert document...      |
+            | Add new folder...        |
+        And The "Corporate Website/Cyber alert" folder should have the menu options not including:
+            | Publish all in folder... |
+            | Edit allowed content...  |

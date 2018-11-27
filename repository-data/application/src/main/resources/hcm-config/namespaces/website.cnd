@@ -6,6 +6,9 @@
 <'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
 <'hippotaxonomy'='http://www.hippoecm.org/hippotaxonomy/nt/1.2'>
 
+[website:address] > hippo:compound, hippostd:relaxed
+  orderable
+
 [website:assetlink] > hippo:compound, hippostd:relaxed
   orderable
 
@@ -20,6 +23,15 @@
   orderable
 
 [website:componentlist] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:cyberalert] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:cyberacknowledgement] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:cybercveidentifier] > hippo:compound, hippostd:relaxed
   orderable
 
 [website:effectivedate] > hippo:compound, hippostd:relaxed
@@ -82,10 +94,25 @@
 [website:news] > hippostd:relaxed, hippotranslation:translated, website:basedocument
   orderable
 
+[website:organisation] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:organisationcode] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:platform] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:platformversion] > hippo:compound, hippostd:relaxed
+  orderable
+
 [website:publishedwork] > hippostd:relaxed, hippotaxonomy:classifiable, hippotranslation:translated, website:basedocument
   orderable
 
 [website:publishedworkchapter] > hippostd:relaxed, hippotaxonomy:classifiable, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:remediationstep] > hippo:compound, hippostd:relaxed
   orderable
 
 [website:roadmap] > hippostd:relaxed, hippotranslation:translated, website:basedocument
@@ -113,5 +140,11 @@
   orderable
 
 [website:visualinternallink] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:threataffect] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:threatupdate] > hippo:compound, hippostd:relaxed
   orderable
 
