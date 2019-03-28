@@ -34,7 +34,7 @@
                     <div class="article-header__inner">
                         <div class="grid-row">
                             <div class="column--two-thirds column--reset">
-                                <h1 class="local-header__title" data-uipath="document.title">${document.title}</h1>
+                                <h1 class="local-header__title" data-uipath="document.title">${document.title}
                                 <p class="article-header__subtitle"><@hst.html hippohtml=document.summary contentRewriter=gaContentRewriter/></p>
                             </div>
                             <div class="column--one-third column--reset">
@@ -48,7 +48,7 @@
         </div>
     <#elseif hasBannerImage>
         <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
-            <h1 class="local-header__title" data-uipath="document.title">${document.title}</h1>
+            ${document.title}
             <@hst.link hippobean=document.image.original fullyQualified=true var="bannerImage" />
             <img aria-hidden="true" src="${bannerImage}" alt="" />
         </div>
@@ -71,6 +71,68 @@
             <div class="column column--two-thirds page-block page-block--main">
 
                 <#if hasLinks>
+                    <div class="article-section">
+                        <div class="grid-row galleryItems">
+                            <#list document.links as link>
+                                <div class="column column--one-half galleryItems__item">
+
+
+                                    <#if link.linkType == "internal">
+                                        <h3 class="galleryItems__heading">${link.link.title}</h3>
+
+                                        <div class="galleryItems__card">
+
+                                            <@hst.link hippobean=link.icon.original fullyQualified=true var="icon" />
+                                            <img src="${icon}" alt="${link.link.title}" />
+
+                                            <div class="galleryItems__description">
+                                                <@hst.html hippohtml=link.link.summary contentRewriter=gaContentRewriter />
+                                            </div>
+
+                                        </div>
+
+                                    <#elseif link.linkType == "external">
+                                        <#assign onClickMethodCall = getOnClickMethodCall(document.class.name, link.link) />
+                                        <h2 class="cta__title"><a href="${link.link}" onClick="${onClickMethodCall}" onKeyUp="return vjsu.onKeyUp(event)">${link.title}</a></h2>
+                                        <p class="cta__text">${link.shortsummary}</p>
+                                    <#elseif link.linkType == "asset">
+                                        <a href="<@hst.link hippobean=link.link />"
+                                           class="block-link"
+                                           onClick="${onClickMethodCall}"
+                                           onKeyUp="return vjsu.onKeyUp(event)">
+                                            <div class="block-link__header">
+                                                <@fileIcon link.link.asset.mimeType></@fileIcon>
+                                            </div>
+                                            <div class="block-link__body">
+                                                <span class="block-link__title">${link.title}</span>
+                                                <@fileMetaAppendix link.link.asset.getLength()></@fileMetaAppendix>
+                                            </div>
+                                        </a>
+                                    </#if>
+
+
+
+                                    <h3 class="galleryItems__heading">${link.title}</h3>
+
+                                    <div class="galleryItems__card">
+
+                                        <@hst.link hippobean=link.image.original fullyQualified=true var="image" />
+                                        <img src="${image}" alt="${galleryItem.title}" />
+
+                                        <div class="galleryItems__description">
+                                            <@hst.html hippohtml=link.description contentRewriter=gaContentRewriter />
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <#if link?is_even_item>
+                                    <div class="clearfix"></div>
+                                </#if>
+                            </#list>
+                        </div>
+                    </div>
 
                 </#if>
 
